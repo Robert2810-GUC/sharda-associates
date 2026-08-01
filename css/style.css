@@ -152,6 +152,7 @@ html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {
@@ -161,7 +162,11 @@ body {
   color: var(--white);
   line-height: 1.65;
   overflow-x: hidden;
-  cursor: none;
+  cursor: auto;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  body { cursor: none; }
 }
 
 body.nav-open {
@@ -428,6 +433,10 @@ img:not(.img-loaded) {
   transition: width .2s ease, height .2s ease, background .2s ease, opacity .2s ease;
   mix-blend-mode: difference;
   will-change: transform;
+  display: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .cursor-dot { display: block; }
 }
 
 .cursor-dot.cursor-expanded {
@@ -1871,8 +1880,8 @@ footer {
   position: fixed;
   bottom: 5.5rem;
   right: 1.5rem;
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   background: var(--deep);
   border: 1px solid rgba(255,255,255,.12);
   border-radius: var(--radius-sm);
@@ -1881,13 +1890,15 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 900;
+  z-index: 9000;
   opacity: 0;
   transform: translateY(12px);
   transition: opacity var(--transition-med), transform var(--transition-med),
               background var(--transition-fast), color var(--transition-fast);
   pointer-events: none;
-  cursor: none;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #back-to-top.visible {
@@ -1906,8 +1917,8 @@ footer {
   position: fixed;
   bottom: 1.5rem;
   right: 1.5rem;
-  width: 52px;
-  height: 52px;
+  width: 56px;
+  height: 56px;
   background: #25D366;
   border-radius: 50%;
   display: flex;
@@ -1915,10 +1926,12 @@ footer {
   justify-content: center;
   font-size: 1.5rem;
   color: var(--white);
-  z-index: 900;
+  z-index: 9000;
   box-shadow: 0 4px 20px rgba(37,211,102,.4);
   transition: transform var(--transition-fast), box-shadow var(--transition-fast);
-  animation: glowPulse 3s ease-in-out infinite;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
 }
 
 #whatsapp-btn:hover {
@@ -3076,6 +3089,7 @@ footer {
 
   .hero-img-bottom { grid-template-columns: 1fr; }
   .hero-accent-card { display: none; }
+  .hero-right { display: none; }
 
   .form-row { grid-template-columns: 1fr; }
   .credentials-grid { grid-template-columns: 1fr; }
