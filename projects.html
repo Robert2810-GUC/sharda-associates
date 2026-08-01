@@ -11,6 +11,22 @@
 </head>
 <body>
 
+<!-- SCROLL PROGRESS -->
+<div id="scroll-progress"></div>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- MOBILE NAV OVERLAY + DRAWER -->
+<div class="mobile-nav-overlay"></div>
+<nav class="mobile-nav-drawer">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="projects.html" class="active">Our Projects</a>
+  <a href="vision.html">Our Vision</a>
+  <a href="index.html#contact" class="nav-cta">Get Quote</a>
+</nav>
+
 <!-- NAVBAR -->
 <nav id="navbar" class="scrolled">
   <a href="index.html" class="nav-logo">
@@ -23,9 +39,9 @@
     <a href="vision.html">Our Vision</a>
     <a href="index.html#contact" class="nav-cta">Get Quote</a>
   </div>
-  <div class="hamburger" aria-label="Toggle menu">
+  <button class="hamburger" aria-label="Toggle menu">
     <span></span><span></span><span></span>
-  </div>
+  </button>
 </nav>
 
 <!-- PAGE HERO -->
@@ -36,7 +52,10 @@
       <span class="sep">/</span>
       <span>Our Projects</span>
     </div>
-    <h1 class="page-hero-title">OUR WORK <span>SPEAKS</span><br>FOR ITSELF</h1>
+    <h1 class="page-hero-title">
+      <span class="word">OUR WORK</span> <span class="word"><span>SPEAKS</span></span><br>
+      <span class="word">FOR ITSELF</span>
+    </h1>
     <p class="page-hero-sub">From government administrative buildings to residential row house colonies — a portfolio built on precision, quality, and 20+ years of commitment.</p>
   </div>
 </section>
@@ -50,10 +69,9 @@
   </div>
 </div>
 
-<!-- TAB: ALL (shows both) -->
+<!-- TAB: ALL -->
 <div id="tab-all" class="tab-content active">
 
-  <!-- RUNNING PROJECTS -->
   <section class="running-section">
     <div class="running-header">
       <div class="pulse-dot"></div>
@@ -61,7 +79,6 @@
     </div>
     <div class="running-grid">
 
-      <!-- Card 1 -->
       <div class="running-card" data-aos="fade-up">
         <div class="running-card-img">
           <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=85" alt="Govt Administrative Block" loading="lazy" />
@@ -86,7 +103,6 @@
         </div>
       </div>
 
-      <!-- Card 2 -->
       <div class="running-card" data-aos="fade-up" data-aos-delay="100">
         <div class="running-card-img">
           <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&q=85" alt="Row House Colony Phase 2" loading="lazy" />
@@ -111,7 +127,6 @@
         </div>
       </div>
 
-      <!-- Card 3 -->
       <div class="running-card" data-aos="fade-up" data-aos-delay="150">
         <div class="running-card-img">
           <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=85" alt="District Court Renovation" loading="lazy" />
@@ -136,7 +151,6 @@
         </div>
       </div>
 
-      <!-- Card 4 -->
       <div class="running-card" data-aos="fade-up" data-aos-delay="200">
         <div class="running-card-img">
           <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800&q=85" alt="Row Houses Sector 7" loading="lazy" />
@@ -164,15 +178,12 @@
     </div>
   </section>
 
-  <!-- COMPLETED PROJECTS -->
   <section class="completed-section">
     <div class="completed-header" data-aos="fade-up">
       <div class="section-eyebrow">Past Work</div>
       <h2>DELIVERED EXCELLENCE</h2>
     </div>
     <div class="completed-grid">
-
-      <!-- Featured -->
       <div class="comp-card featured" data-aos="fade-up">
         <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=85" alt="Govt Office Complex" loading="lazy" />
         <div class="comp-overlay">
@@ -181,7 +192,6 @@
           <div class="comp-year">2023</div>
         </div>
       </div>
-
       <div class="comp-card" data-aos="fade-up">
         <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&q=85" alt="Row House Colony" loading="lazy" />
         <div class="comp-overlay">
@@ -190,7 +200,6 @@
           <div class="comp-year">2022</div>
         </div>
       </div>
-
       <div class="comp-card" data-aos="fade-up" data-aos-delay="100">
         <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=85" alt="Municipal Corporation" loading="lazy" />
         <div class="comp-overlay">
@@ -199,7 +208,6 @@
           <div class="comp-year">2021</div>
         </div>
       </div>
-
       <div class="comp-card" data-aos="fade-up" data-aos-delay="100">
         <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&q=85" alt="Row Houses Vrindavan" loading="lazy" />
         <div class="comp-overlay">
@@ -208,7 +216,6 @@
           <div class="comp-year">2023</div>
         </div>
       </div>
-
       <div class="comp-card" data-aos="fade-up" data-aos-delay="150">
         <img src="https://images.unsplash.com/photo-1609347744403-2306c1aa6b71?w=800&q=85" alt="Road Development" loading="lazy" />
         <div class="comp-overlay">
@@ -217,7 +224,6 @@
           <div class="comp-year">2024</div>
         </div>
       </div>
-
       <div class="comp-card" data-aos="fade-up" data-aos-delay="150">
         <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=700&q=85" alt="Govt School Building" loading="lazy" />
         <div class="comp-overlay">
@@ -226,7 +232,6 @@
           <div class="comp-year">2022</div>
         </div>
       </div>
-
       <div class="comp-card" data-aos="fade-up" data-aos-delay="200">
         <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800&q=85" alt="Row Houses Aashiyana" loading="lazy" />
         <div class="comp-overlay">
@@ -235,7 +240,6 @@
           <div class="comp-year">2021</div>
         </div>
       </div>
-
       <div class="comp-card" data-aos="fade-up" data-aos-delay="200">
         <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=85" alt="Water Supply Project" loading="lazy" />
         <div class="comp-overlay">
@@ -244,7 +248,6 @@
           <div class="comp-year">2020</div>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -418,7 +421,7 @@
 </div>
 
 <!-- CTA -->
-<section class="cta-banner">
+<section class="cta-banner" data-aos="zoom-in">
   <div class="cta-banner-inner">
     <h2>YOUR PROJECT NEXT?</h2>
     <p>Government contract or residential development — we're ready when you are.</p>
@@ -480,7 +483,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2024 Sharda Associates. All rights reserved.</span>
+    <span>© 2025 Sharda Associates. All rights reserved.</span>
     <span class="gstin">Est. 2005 · Dhanesh Agrawal · Lucknow, UP</span>
   </div>
 </footer>

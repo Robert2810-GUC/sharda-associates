@@ -11,6 +11,22 @@
 </head>
 <body>
 
+<!-- SCROLL PROGRESS -->
+<div id="scroll-progress"></div>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- MOBILE NAV OVERLAY + DRAWER -->
+<div class="mobile-nav-overlay"></div>
+<nav class="mobile-nav-drawer">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="projects.html">Our Projects</a>
+  <a href="vision.html" class="active">Our Vision</a>
+  <a href="index.html#contact" class="nav-cta">Get Quote</a>
+</nav>
+
 <!-- NAVBAR -->
 <nav id="navbar" class="scrolled">
   <a href="index.html" class="nav-logo">
@@ -23,9 +39,9 @@
     <a href="vision.html" class="active">Our Vision</a>
     <a href="index.html#contact" class="nav-cta">Get Quote</a>
   </div>
-  <div class="hamburger" aria-label="Toggle menu">
+  <button class="hamburger" aria-label="Toggle menu">
     <span></span><span></span><span></span>
-  </div>
+  </button>
 </nav>
 
 <!-- PAGE HERO -->
@@ -36,7 +52,11 @@
       <span class="sep">/</span>
       <span>Our Vision</span>
     </div>
-    <h1 class="page-hero-title">OUR VISION FOR<br>A <span>BETTER</span><br>TOMORROW</h1>
+    <h1 class="page-hero-title">
+      <span class="word">OUR VISION</span> <span class="word">FOR</span><br>
+      <span class="word">A</span> <span class="word"><span>BETTER</span></span><br>
+      <span class="word">TOMORROW</span>
+    </h1>
     <p class="page-hero-sub">Two decades of building have taught us that construction is about more than concrete and steel — it's about shaping the future of communities and the state of Uttar Pradesh.</p>
   </div>
 </section>
@@ -44,12 +64,10 @@
 <!-- VISION STATEMENT -->
 <section class="vision-statement">
   <div class="vision-inner">
-    <!-- Sidebar -->
     <div class="vision-sidebar" data-aos="fade-right">
       <span class="vision-big-num">20+</span>
       <span class="vision-sidebar-label">Years of<br>Vision</span>
     </div>
-    <!-- Main content -->
     <div data-aos="fade-left">
       <div class="section-eyebrow">What We Believe In</div>
       <h2 class="section-title" style="margin-bottom:2rem;">OUR VISION <span>STATEMENT</span></h2>
@@ -180,7 +198,7 @@
 </section>
 
 <!-- CTA BANNER -->
-<section class="cta-banner">
+<section class="cta-banner" data-aos="zoom-in">
   <div class="cta-banner-inner">
     <h2>BE PART OF OUR VISION</h2>
     <p>Whether you're a government department, a housing developer, or a family looking to build — we want to build it with you.</p>
@@ -245,7 +263,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2024 Sharda Associates. All rights reserved.</span>
+    <span>© 2025 Sharda Associates. All rights reserved.</span>
     <span class="gstin">Est. 2005 · Dhanesh Agrawal · Lucknow, UP</span>
   </div>
 </footer>

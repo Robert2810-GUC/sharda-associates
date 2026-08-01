@@ -7,10 +7,15 @@
   <meta name="description" content="Sharda Associates — Lucknow's trusted construction company specializing in government projects and row houses. Est. 2005 by Dhanesh Agrawal." />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
-  <!-- Icons via CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
+
+<!-- SCROLL PROGRESS -->
+<div id="scroll-progress"></div>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor-dot" id="cursorDot"></div>
 
 <!-- PRELOADER -->
 <div id="preloader">
@@ -20,6 +25,16 @@
     <div class="preloader-bar"></div>
   </div>
 </div>
+
+<!-- MOBILE NAV OVERLAY + DRAWER -->
+<div class="mobile-nav-overlay"></div>
+<nav class="mobile-nav-drawer">
+  <a href="index.html" class="active">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="projects.html">Our Projects</a>
+  <a href="vision.html">Our Vision</a>
+  <a href="#contact" class="nav-cta">Get Quote</a>
+</nav>
 
 <!-- NAVBAR -->
 <nav id="navbar">
@@ -33,9 +48,9 @@
     <a href="vision.html">Our Vision</a>
     <a href="#contact" class="nav-cta">Get Quote</a>
   </div>
-  <div class="hamburger" aria-label="Toggle menu">
+  <button class="hamburger" aria-label="Toggle menu">
     <span></span><span></span><span></span>
-  </div>
+  </button>
 </nav>
 
 <!-- HERO -->
@@ -46,10 +61,12 @@
     <div class="hero-left">
       <div class="hero-eyebrow">Est. 2005 · Lucknow, UP</div>
       <h1 class="hero-headline">
-        WE BUILD<br>WHAT<br>MATTERS
+        <span class="word">WE</span> <span class="word">BUILD</span><br>
+        <span class="word">WHAT</span><br>
+        <span class="word">MATTERS</span>
         <span class="brand-line">SHARDA ASSOCIATES</span>
       </h1>
-      <p class="hero-sub">Government project specialists and row house builders in Lucknow, Uttar Pradesh. Quality construction since 2005 under the leadership of Dhanesh Agrawal.</p>
+      <p class="hero-sub" data-typed="Government project specialists and row house builders in Lucknow, Uttar Pradesh. Quality construction since 2005 under the leadership of Dhanesh Agrawal.">Government project specialists and row house builders in Lucknow, Uttar Pradesh. Quality construction since 2005 under the leadership of Dhanesh Agrawal.</p>
       <div class="hero-stats-row">
         <div class="hero-stat">
           <div class="hero-stat-num">20+</div>
@@ -74,7 +91,7 @@
           <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=85" alt="Government building" loading="lazy" />
         </div>
         <div class="hero-accent-card">
-          <div class="num">500<span style="font-size:2rem">+</span></div>
+          <div class="num">500<span style="font-size:1.5rem">+</span></div>
           <div class="lbl">Projects Delivered</div>
         </div>
       </div>
@@ -134,7 +151,6 @@
     <p class="section-desc">From government infrastructure to private row house colonies, Sharda Associates delivers across the full spectrum of construction.</p>
   </div>
   <div class="services-grid">
-    <!-- Big card -->
     <div class="service-card big" data-aos="fade-right">
       <div class="card-bg"></div>
       <div class="card-content">
@@ -144,14 +160,12 @@
         <p class="service-desc">Our flagship specialization. We handle government office buildings, court renovations, school constructions, municipal infrastructure, and administrative blocks throughout Uttar Pradesh.</p>
       </div>
     </div>
-    <!-- Top right -->
     <div class="service-card" data-aos="fade-left">
       <div class="service-num">02</div>
       <div class="service-icon">🏠</div>
       <h3 class="service-title">Row House Construction</h3>
       <p class="service-desc">Quality residential row houses built to last. We develop full colonies with modern amenities, handling everything from land planning to finishing works for individual buyers and developers.</p>
     </div>
-    <!-- Bottom right -->
     <div class="service-card" data-aos="fade-left" data-aos-delay="100">
       <div class="service-num">03</div>
       <div class="service-icon">🛣️</div>
@@ -280,11 +294,9 @@
 
 <!-- TESTIMONIALS -->
 <section class="testimonials">
-  <div style="max-width:1200px;margin:0 auto;">
-    <div class="section-header" data-aos="fade-up">
-      <div class="section-eyebrow">Client Voices</div>
-      <h2 class="section-title">WHAT CLIENTS <span>SAY</span></h2>
-    </div>
+  <div class="section-header" data-aos="fade-up" style="max-width:1200px;margin-left:auto;margin-right:auto;">
+    <div class="section-eyebrow">Client Voices</div>
+    <h2 class="section-title">WHAT CLIENTS <span>SAY</span></h2>
   </div>
   <div class="testimonials-grid">
     <div class="testi-card" data-aos="fade-up">
@@ -335,7 +347,7 @@
 </section>
 
 <!-- CTA BANNER -->
-<section class="cta-banner">
+<section class="cta-banner" data-aos="zoom-in">
   <div class="cta-banner-inner">
     <h2>START YOUR PROJECT TODAY</h2>
     <p>Government contracts, row houses, or civil infrastructure — we're ready to build for you.</p>
@@ -488,7 +500,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2024 Sharda Associates. All rights reserved.</span>
+    <span>© 2025 Sharda Associates. All rights reserved.</span>
     <span class="gstin">GSTIN: 09ADXPA9151E1ZA · Licensed Contractor · Lucknow, UP</span>
   </div>
 </footer>

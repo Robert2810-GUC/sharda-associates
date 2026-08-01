@@ -11,6 +11,22 @@
 </head>
 <body>
 
+<!-- SCROLL PROGRESS -->
+<div id="scroll-progress"></div>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- MOBILE NAV OVERLAY + DRAWER -->
+<div class="mobile-nav-overlay"></div>
+<nav class="mobile-nav-drawer">
+  <a href="index.html">Home</a>
+  <a href="about.html" class="active">About Us</a>
+  <a href="projects.html">Our Projects</a>
+  <a href="vision.html">Our Vision</a>
+  <a href="index.html#contact" class="nav-cta">Get Quote</a>
+</nav>
+
 <!-- NAVBAR -->
 <nav id="navbar">
   <a href="index.html" class="nav-logo">
@@ -23,9 +39,9 @@
     <a href="vision.html">Our Vision</a>
     <a href="index.html#contact" class="nav-cta">Get Quote</a>
   </div>
-  <div class="hamburger" aria-label="Toggle menu">
+  <button class="hamburger" aria-label="Toggle menu">
     <span></span><span></span><span></span>
-  </div>
+  </button>
 </nav>
 
 <!-- PAGE HERO -->
@@ -36,7 +52,10 @@
       <span class="sep">/</span>
       <span>About Us</span>
     </div>
-    <h1 class="page-hero-title">ABOUT <span>SHARDA</span><br>ASSOCIATES</h1>
+    <h1 class="page-hero-title">
+      <span class="word">ABOUT</span> <span class="word"><span>SHARDA</span></span><br>
+      <span class="word">ASSOCIATES</span>
+    </h1>
     <p class="page-hero-sub">Over two decades of trusted construction across Uttar Pradesh — built on integrity, skill, and community commitment.</p>
   </div>
 </section>
@@ -44,7 +63,6 @@
 <!-- FOUNDER SECTION -->
 <section class="founder-section">
   <div class="founder-inner">
-    <!-- Portrait -->
     <div data-aos="fade-right">
       <div class="founder-portrait">
         <div class="founder-portrait-icon">👤</div>
@@ -56,7 +74,6 @@
       </div>
     </div>
 
-    <!-- Right side content -->
     <div data-aos="fade-left">
       <div class="section-eyebrow">Our Founder</div>
       <h2 class="founder-name-display">DHANESH<br>AGRAWAL</h2>
@@ -73,19 +90,19 @@
       </div>
 
       <div class="credentials-grid">
-        <div class="cred-item">
+        <div class="cred-item" data-aos="fade-up">
           <div class="cred-icon">📋</div>
           <span>Licensed Contractor</span>
         </div>
-        <div class="cred-item">
+        <div class="cred-item" data-aos="fade-up" data-aos-delay="80">
           <div class="cred-icon">🏛️</div>
           <span>GST Registered</span>
         </div>
-        <div class="cred-item">
+        <div class="cred-item" data-aos="fade-up" data-aos-delay="160">
           <div class="cred-icon">⭐</div>
           <span>20+ Years Experience</span>
         </div>
-        <div class="cred-item">
+        <div class="cred-item" data-aos="fade-up" data-aos-delay="240">
           <div class="cred-icon">✅</div>
           <span>Govt. Certified</span>
         </div>
@@ -97,7 +114,6 @@
 <!-- TIMELINE / COMPANY STORY -->
 <section class="timeline-section">
   <div class="timeline-inner">
-    <!-- Timeline -->
     <div>
       <div class="section-eyebrow" data-aos="fade-up">Company Story</div>
       <h2 class="section-title" data-aos="fade-up">OUR <span>JOURNEY</span></h2>
@@ -125,7 +141,6 @@
       </div>
     </div>
 
-    <!-- Image grid -->
     <div>
       <div class="section-eyebrow" data-aos="fade-up">In the Field</div>
       <h2 class="section-title" data-aos="fade-up">OUR <span>WORK</span></h2>
@@ -187,17 +202,17 @@
     <p class="section-desc" data-aos="fade-up">Fully licensed, registered, and compliant with all applicable government regulations for construction in Uttar Pradesh.</p>
   </div>
   <div class="certs-grid">
-    <div class="cert-card" data-aos="fade-up">
+    <div class="cert-card" data-aos="zoom-in">
       <div class="cert-icon">🏛️</div>
       <div class="cert-title">GST Registered</div>
       <div class="cert-detail">GSTIN: 09ADXPA9151E1ZA<br>Registered under UP GST</div>
     </div>
-    <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+    <div class="cert-card" data-aos="zoom-in" data-aos-delay="100">
       <div class="cert-icon">📋</div>
       <div class="cert-title">Licensed Contractor</div>
       <div class="cert-detail">Authorized for government<br>construction projects in UP</div>
     </div>
-    <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+    <div class="cert-card" data-aos="zoom-in" data-aos-delay="200">
       <div class="cert-icon">🏆</div>
       <div class="cert-title">20+ Years Track Record</div>
       <div class="cert-detail">Consistent delivery since 2005<br>with 500+ completed projects</div>
@@ -206,7 +221,7 @@
 </section>
 
 <!-- CTA BANNER -->
-<section class="cta-banner">
+<section class="cta-banner" data-aos="zoom-in">
   <div class="cta-banner-inner">
     <h2>LET'S BUILD TOGETHER</h2>
     <p>Talk to Dhanesh Agrawal directly about your construction requirements.</p>
@@ -267,7 +282,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2024 Sharda Associates. All rights reserved.</span>
+    <span>© 2025 Sharda Associates. All rights reserved.</span>
     <span class="gstin">Est. 2005 · Dhanesh Agrawal · Lucknow, UP</span>
   </div>
 </footer>
